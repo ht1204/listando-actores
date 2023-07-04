@@ -1,24 +1,24 @@
-# README
+# Listando Actores (Listing Actors)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A RoR-MVC project for listing actors
 
-Things you may want to cover:
+## Requirements
+- Install Ruby Version 2.7.6 in your local machine. I recommend [check this](https://rubyinstaller.org/downloads/).
+- Write these commands:
+  * `bundle install`,If there is any issue with `bundle`, write `gem install bundler` and try again.
+  * `yarn install` . If there is any issue with `yarn`, remove the file `yarn.lock` and try again.
+  * `rails db:migrate`
+  * `rails db:seed`
 
-* Ruby version
+- Rails framework should be installed and run server in project directory:
 
-* System dependencies
+```
+gem install rails
+rails server
+```
 
-* Configuration
+- The app must be running with this default route: `http://localhost:3000/`
+- Go to route `http://localhost:3000/actors`. A list of actors should appear.
 
-* Database creation
+Make It Real - Bootcamp
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
