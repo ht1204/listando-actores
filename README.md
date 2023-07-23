@@ -10,6 +10,8 @@ A RoR-MVC project for listing actors
   * `rails db:migrate`
   * `rails db:seed`
 
+  Note: reset the database using the command: `rake db:schema:load`
+
 - Use node v14.15.5, I recommend nvm for management of node versions.
 
 - Rails framework should be installed and run server in project directory:

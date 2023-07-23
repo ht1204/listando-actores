@@ -1,3 +1,112 @@
-// Place all the styles related to the Actors controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+/* Base styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  width: 200px;
+  height: 580px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* Base styles for all screen sizes */
+/* ... (same as before) ... */
+
+/* Media queries for different screen sizes */
+/* Small screens (<576px) */
+@media only screen and (max-width: 575px) {
+  li {
+    width: 100%;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Medium screens (≥576px) */
+@media only screen and (min-width: 576px) {
+  ul {
+    justify-content: center;
+  }
+
+  li {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Large screens (≥768px) */
+@media only screen and (min-width: 768px) {
+  li {
+    width: calc(33.33% - 20px);
+  }
+}
+
+/* Extra large screens (≥1200px) */
+@media only screen and (min-width: 1200px) {
+  li {
+    width: calc(25% - 20px);
+  }
+}
+
+/* Extra extra large screens (≥1400px) */
+@media only screen and (min-width: 1400px) {
+  li {
+    width: calc(16.666% - 20px);
+  }
+}
+
